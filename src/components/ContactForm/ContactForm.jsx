@@ -35,7 +35,6 @@ const ContactForm = () => {
         );
         if (isNameInContacts) {
           alert('Sorry >±< this contact already in list ⬇️');
-          actions.resetForm();
           return;
         }
         dispatch(addContact({ name, number }));
